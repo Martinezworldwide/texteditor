@@ -22,3 +22,13 @@ body {
   margin-top: 10px;
   overflow-y: auto;
 }
+.toolbar label {
+  margin-left: 10px;
+}
+
+.toolbar input[type="color"] {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
