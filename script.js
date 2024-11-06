@@ -1,7 +1,9 @@
+// Format text commands
 function formatText(command) {
   document.execCommand(command, false, null);
 }
 
+// Save text as HTML file
 function saveText() {
   const text = document.getElementById("editor").innerHTML;
   const blob = new Blob([text], { type: "text/html" });
@@ -11,12 +13,14 @@ function saveText() {
   link.click();
 }
 
-// Function to change background color of the editor
+// Change background color of the editor
 function changeBackgroundColor(color) {
-  document.getElementById("editor").style.backgroundColor = color;
+  const editor = document.getElementById("editor");
+  editor.style.backgroundColor = color;
 }
 
-// Function to change font color of the editor
+// Change font color of the editor
 function changeFontColor(color) {
-  document.getElementById("editor").style.color = color;
+  const editor = document.getElementById("editor");
+  editor.style.color = color;
 }
