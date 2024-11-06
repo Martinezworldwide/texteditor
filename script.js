@@ -10,3 +10,13 @@ function saveText() {
   link.download = "document.html";
   link.click();
 }
+
+// Function to change background color of the editor
+function changeBackgroundColor(color) {
+  document.getElementById("editor").style.backgroundColor = color;
+}
+
+// Function to change font color of the editor
+function changeFontColor(color) {
+  document.getElementById("editor").style.color = color;
+}
