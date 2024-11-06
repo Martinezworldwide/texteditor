@@ -15,6 +15,13 @@
     <button onclick="formatText('justifyCenter')">Center Align</button>
     <button onclick="formatText('justifyRight')">Right Align</button>
     <button onclick="saveText()">Save</button>
+
+    <!-- New Color Inputs for Background and Font -->
+    <label for="backgroundColor">Background Color:</label>
+    <input type="color" id="backgroundColor" onchange="changeBackgroundColor(this.value)">
+    
+    <label for="fontColor">Font Color:</label>
+    <input type="color" id="fontColor" onchange="changeFontColor(this.value)">
   </div>
   
   <div id="editor" contenteditable="true" class="editor">
